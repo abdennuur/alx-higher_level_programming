@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-ix = 0
-for ca in range(ord('z'), ord('a') - 1, -1):
-    print("{}".format(chr(ca - ix)), end="")
-    ix = 32 if ix == 0 else 0
+def remove_char_at(str, n):
+    if n < 0:
+        return (str)
+    return (str[:n] + str[n+1:])
