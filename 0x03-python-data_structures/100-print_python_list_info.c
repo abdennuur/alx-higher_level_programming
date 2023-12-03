@@ -11,5 +11,5 @@ void print_python_list_info(PyObject *p)
 	printf("[*] Size of the Python List = %li\n", sz);
 	printf("[*] Allocated = %li\n", objct->allocated);
 	for (ix = 0; ix < sz; ix++)
-		printf("Element %i: %s\n", i, Py_TYPE(objct->ob_item[ix])->tp_name);
+		printf("Element %i: %s\n", ix, Py_TYPE(objct->ob_item[ix])->tp_name);
 }
