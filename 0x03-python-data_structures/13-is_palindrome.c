@@ -20,7 +20,7 @@ int is_palindrome(listint_t **head)
         return (1);
     
     strt = *head;
-    ln = listint_ln(strt);
+    ln = listint_len(strt);
     ln_cyc = ln * 2;
     ln_list = ln_cyc - 2;
     end = *head;
