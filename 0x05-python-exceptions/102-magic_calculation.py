@@ -3,11 +3,10 @@ def magic_calculation(a, b):
     rslt = 0
     for ix in range(1, 3):
         try:
-            if (ix > a):
-                raise Exception("Too far")
-            else:
-                rslt += (a ** b) / ix
+            if ix > a:
+                raise Exception('Too far')
+            rslt += a ** b / ix
         except:
             rslt = b + a
             break
-    return (rslt)
+    return rslt
