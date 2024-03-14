@@ -17,9 +17,9 @@ class City(Base):
     Represents a city model that corresponds to the MySQL table cities.
 
     Attributes:
-        id: An auto-generated, unique integer column representing the primary key.
+        id: An auto-generated, unique int column representing primary key.
         name: A string column with a maximum length of 128 characters.
-        state_id: An integer column representing a foreign key to the states table.
+        state_id: An int column representing a foreign key to states table.
 
     """
     __tablename__ = "cities"
