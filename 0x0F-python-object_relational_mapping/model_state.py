@@ -14,11 +14,12 @@ Base = declarative_base()
 
 class State(Base):
     """
-    Represents a state model that corresponds to MySQL table states.
+    Represents state model that corresponds to the MySQL table states.
 
     Attributes:
-        id: An auto-generated, unique int column representing primary key.
-        name: A string column with a max length of 128 characters.
+        id: An auto-generated, unique int column representing the primary key.
+        name: A string column representing the name of the state,
+            with a max length of 128 characters.
 
     """
     __tablename__ = "states"
